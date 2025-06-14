@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Pooja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.sh/@google/genai@^0.7.0"
+        }
+      }
+    </script>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-header">
+            <div id="chat-header-title">
+                <div id="chat-header-avatar">P</div>
+                <span>Pooja <span id="chat-header-status">online</span></span>
+            </div>
+        </div>
+        <div id="chat-output" aria-live="polite"></div>
+        <div id="input-area">
+            <input type="text" id="message-input" placeholder="Message Pooja..." aria-label="Message Pooja" disabled>
+            <button id="send-button" disabled>Send</button>
+        </div>
+    </div>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>
