@@ -1,4 +1,4 @@
-# Run and deploy your Pooja.
+# Run and deploy your AI
 
 This contains everything you need to run your app locally.
 
